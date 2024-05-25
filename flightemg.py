@@ -27,20 +27,12 @@ def find_nearest_location(current_position, locations):
     return nearest_location
 
 def check_for_damage():
-    # Simulate checking for damage
-    return True  # For demonstration purposes, always assume there is damage
+    return True  
 
 def main():
-    # Read airports from CSV
     airports = read_airports_from_csv(r'D:\airbnb\airbus\airbus\python\airports.csv')
-    
-    # Define the flight path
     flight_path = [(40.7128, -74.006), (40.84967033430713, -78.67586478629836), (40.128443476304135, -92.61605962755559), (39.52029944740094, -97.15591464581742), (36.68653433340621, -110.17655028608988), (35.436893089900316, -114.27577549039238), (34.0522, -118.24370000000002)]
-    
-    # Define current position of the aircraft (last point of the flight path)
     current_position = flight_path[-1]
-    
-    # Check for damage
     if check_for_damage():
         print("WARNING: Aircraft damage detected. Finding emergency landing sites.")
         nearest_location = find_nearest_location(current_position, airports)

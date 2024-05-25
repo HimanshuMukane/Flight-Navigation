@@ -6,6 +6,33 @@ CORS(app)  # Enable CORS for this Flask app
 from geographiclib.geodesic import Geodesic
 import heapq
 
+class Airport:
+    def __init__(self, name, latitude, longitude):
+        self.name = name
+        self.latitude = latitude
+        self.longitude = longitude
+
+def read_airports_from_csv(filename):
+    airports = []
+    with open(filename, newline='', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            airport = Airport(row['Name'], float(row['Latitude']), float(row['Longitude']))
+            airports.append(airport)
+    return airports
+
+def find_nearest_location(current_position, locations):
+    nearest_location = None
+    min_distance = float('inf')
+    for location in locations:
+        distance = Geodesic.WGS84.Inverse(location.latitude, location.longitude, current_position[0], current_position[1])['s12']
+        if distance < min_distance:
+            nearest_location = location
+            min_distance = distance
+    return nearest_location
+
+def check_for_damage():
+    return True  
 def compute_geodesic_points(start_point, end_point, num_points):
     geod = Geodesic.WGS84
     geodesic_line = geod.InverseLine(start_point[0], start_point[1], end_point[0], end_point[1])
