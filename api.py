@@ -167,12 +167,12 @@ def your_flask_route():
     airports = read_airports_from_csv(r'airports.csv')
     current_position = shortest_path[-1]
     current_fuel_level = float(10)
+    nearest_port = None
     if current_fuel_level < 20:  
         nearest_port = find_nearest_port(current_position, airports)
         if nearest_port:
             print("WARNING: Low fuel level detected. Nearby port for refueling:", nearest_port.name)
         else:
-            nearest_port = None
             print("No nearby port found for refueling.")
 
     if check_for_damage():
@@ -183,7 +183,7 @@ def your_flask_route():
         else:
             print("No suitable emergency landing site found nearby.")
 
-    response_data = {"message": tuple(shortest_path), "weather_d": output, "nearest_port": nearest_port.name}
+    response_data = {"message": tuple(shortest_path), "weather_d": output, "nearest_port": nearest_port.name if nearest_port else None, "nearest_location": nearest_location.name if nearest_location else None}
     print(response_data,"my json data")
     return jsonify(response_data)
 

@@ -438,8 +438,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                     i++;
                                 });
                                 const modal2 = document.getElementById("modal2");
-                                const mod
-                                alert("The nearest port is " + nearPort);
+                                const modal2_body = document.getElementById('modal2_body');
+                                if (nearPort != null) {
+                                    modal2.classList.remove('hidden');
+                                    modal2_body.textContent = "The nearest port is " + nearPort;
+                                }
                             } catch (error) {
                                 console.error("Error parsing response:", error);
                             }
