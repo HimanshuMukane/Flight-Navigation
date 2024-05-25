@@ -64,16 +64,6 @@ print("The sum is:", result)
 - [@AdityaBhandare](https://github.com/AdiEmirates)
 - [@VivekDhara](https://github.com/DharaVivek)
 
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-
 ## Demo
 
 Insert gif or link to demo
@@ -87,9 +77,6 @@ Insert gif or link to demo
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
 - Cross platform
 - Data Collection and Management
 - Scenario Identification
@@ -97,60 +84,10 @@ Insert gif or link to demo
 - User Interface and Dashboard
 
 
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd https://github.com/HimanshuMukane/Flight-Navigation
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 
 ## Tech Stack
 
-**Client:** React, Python, CSS, Javascript
-
-**Server:** Apache, Nginx
-
+**Languages & Framework:** Flask, Python, CSS, Javascript
 
 ## Support
 
