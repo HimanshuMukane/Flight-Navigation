@@ -99,14 +99,16 @@ def fetch_real_time_weather_data(api_key, city_name):
     json_data = response.json()
     if isinstance(json_data, list):
         for item in json_data:
-            print(item)
+            # print(item)
+            pass
     elif isinstance(json_data, dict):
         for key, value in json_data.items():
-            print(f"{key}: {value}")
+            # print(f"{key}: {value}")
+            pass
         print(" ")
         print(" ")
     else:
-        print(json_data)
+        print(json_data, "Hello")
     if response.status_code == 200:
         data = response.json()
         weather_data = {
@@ -115,7 +117,8 @@ def fetch_real_time_weather_data(api_key, city_name):
             'temp_min': data['main']['temp_min'] - 273.15,  # Convert from Kelvin to Celsius
             'wind': data['wind']['speed']
         }
-        return pd.DataFrame([weather_data])
+        # return pd.DataFrame([weather_data])
+        return json_data
     else:
         print("Error fetching weather data:", response.status_code)
         return None
@@ -132,7 +135,7 @@ def your_flask_route():
     obstacle_points_latitude2 = float(request.json.get('obstacle_points_latitude2'))
     obstacle_points_longitude2 = float(request.json.get('obstacle_points_longitude2'))
     api_key = "ca8c2c7970a09dc296d9b3cfc4d06940"
-    fetch_real_time_weather_data(api_key, city_name)
+    output = fetch_real_time_weather_data(api_key, city_name)
 
     start_point = (start_latitude, start_longitude) 
     end_point = (end_latitude, end_longitude)  
@@ -169,6 +172,7 @@ def your_flask_route():
         if nearest_port:
             print("WARNING: Low fuel level detected. Nearby port for refueling:", nearest_port.name)
         else:
+            nearest_port = None
             print("No nearby port found for refueling.")
 
     if check_for_damage():
@@ -179,8 +183,8 @@ def your_flask_route():
         else:
             print("No suitable emergency landing site found nearby.")
 
-    response_data = {"message": tuple(shortest_path)}
-
+    response_data = {"message": tuple(shortest_path), "weather_d": output, "nearest_port": nearest_port.name}
+    print(response_data,"my json data")
     return jsonify(response_data)
 
 if __name__ == '__main__':

@@ -9,6 +9,11 @@
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css'>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.16.0/mapbox-gl-draw.css'>
     <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
 </head>
 
 <body translate="no">
@@ -24,6 +29,12 @@
             <a href="#" class="show-modal" data-modal="modal4">
                 <i class="fas fa-gas-pump"></i>
                 <span>Flight Fuel</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="show-modal" data-modal="modal2">
+                <i class="fas fa-cloud"></i>
+                <span>Weather Details</span>
             </a>
         </li>
         <li>
@@ -123,25 +134,39 @@
     </div>
 
 
-    <!-- <div id="modal2" class="modal active" style="display: block;">
+    <div id="modal2" class="modal active hidden" style="display: block;">
         <div class="modal-wrapper">
             <div class="modal-content">
-                <div class="close modal-close">&times;</div>
-                <div class="modal-body">
+                <div class="modal-body" id="modal2_body">
+                    nearest_port: 'Jaipur International Airport'
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <div id="modal3" class="modal active" style="display: block;">
-        <!-- <span class="threedicon">
-            <i class="fas fa-cloud"></i>
-        </span> -->
+    </div>
+    <!-- 'weather': {'coord': {'lon': 78.4744, 'lat': 17.3753}, 
+    'weather': [{'id': 802, 'main': 'Clouds', 'description': 'scattered clouds', 'icon': '03d'}], 
+    'base': 'stations', 
+    'main': {'temp': 309.38, 'feels_like': 312.06, 'temp_min': 309.38, 'temp_max': 309.88, 'pressure': 1003, 'humidity': 38}, 
+    'visibility': 6000, 
+    'wind': {'speed': 5.14, 'deg': 270}, 
+    'clouds': {'all': 40}, '
+    dt': 1716623234, 
+    'sys': {'type': 1, 'id': 9214, 'country': 'IN', 'sunrise': 1716595913, 'sunset': 1716642873}, 
+    'timezone': 19800, 'id': 1269843, 'name': 'Hyderabad', 'cod': 200} -->
+    <div id="modal3" class="modal active hidden" style="display: block;">
         <div class="modal-wrapper">
             <div class="modal-content">
                 <div class="close modal-close">&times;</div>
-                <div class="modal-body">
-                    Weather condition
+                <div class="modal-body" id="weather_condition_modal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -290,21 +315,22 @@
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            mapboxgl.accessToken = 'pk.eyJ1IjoiYWx1a2FjaCIsImEiOiJ3US1JLXJnIn0.xrpBHCwvzsX76YlO-08kjg';
-            const map = new mapboxgl.Map({
-                container: 'map', // Container ID
-                style: 'mapbox://styles/mapbox/streets-v12', // Map style to use
-                center: [19.0760, 72.8777], // Starting position [lng, lat]
-                zoom: 3, // Starting zoom level
-                pitch: 0, // Tilt the map for 3D effect
-                bearing: 0 // Rotate the map
-            });
+document.addEventListener('DOMContentLoaded', function () {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWx1a2FjaCIsImEiOiJ3US1JLXJnIn0.xrpBHCwvzsX76YlO-08kjg';
+    const map = new mapboxgl.Map({
+        container: 'map', // Container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // Map style to use
+        center: [19.0760, 72.8777], // Starting position [lng, lat]
+        zoom: 3, // Starting zoom level
+        pitch: 0, // Tilt the map for 3D effect
+        bearing: 0 // Rotate the map
+    });
             let centercordlat;
             let centercordlon;
-            document.getElementById("uploadForm").addEventListener("submit", function (event) {
-                event.preventDefault();
-                var formData = {
+    document.getElementById("uploadForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        var formData = {
+
                     city_name: document.getElementById("start_city").value,
                     start_latitude: document.getElementById("start_latitude").value,
                     start_longitude: document.getElementById("start_longitude").value,
@@ -361,6 +387,59 @@
                                 } else {
                                     console.error("Invalid response format. Expected an array of coordinates.");
                                 }
+                                console.log(response.weather_d)
+                                // <span>coord</span>
+                                // <span>coord</span>
+                                // <span>weather.main</span>
+                                // <span>main.temp</span>
+                                // <span>main.temp_min</span>
+                                // <span>main.temp_max</span>
+                                // <span>main.pressure</span>
+                                // <span>main.humidity</span>
+                                // <span>visibility</span>
+                                // <span>wind.speed</span>
+                                // <span>wind.deg</span>
+                                data = {
+                                    'message': ((12.971600000000002, 77.5946), (12.983951799738804, 77.86209920585064), (12.996028388708906, 78.1296245425067), (13.00782947617585, 78.39717544795418), (13.019354777938377, 78.66475135771958), (13.030604016342021, 78.93235170492287), (13.041576920292442, 79.19997592033089), (13.052273225268442, 79.467623432411), (13.062692673334668, 79.73529366738501), (13.072835013154073, 80.00298604928341), (13.0827, 80.27070000000002)),
+                                    'weather_d': {
+                                        'coord': {'lon': 77.6033, 'lat': 12.9762},
+                                        'weather': [{'id': 802, 'main': 'Clouds', 'description': 'scattered clouds', 'icon': '03d'}],
+                                        'base': 'stations', 
+                                        'main': {'temp': 302.7, 'feels_like': 303.84, 'temp_min': 301.96, 'temp_max': 304.39, 'pressure': 1009, 'humidity': 52},
+                                        'visibility': 6000, 
+                                        'wind': {'speed': 4.63, 'deg': 280}, 
+                                        'clouds': {'all': 40}, 
+                                        'dt': 1716624314, 
+                                        'sys': {'type': 2, 'id': 2017753, 'country': 'IN', 'sunrise': 1716596565, 'sunset': 1716642639}, 
+                                        'timezone': 19800, 
+                                        'id': 1277333, 
+                                        'name': 'Bengaluru', 
+                                        'cod': 200}, 
+                                    'nearest_port': 'Chennai International Airport'
+                                }
+                                const modal3 = document.getElementById("modal3");
+                                modal3.classList.remove('hidden');
+                                const nearPort = response.nearest_port;
+                                const weather_d = response.weather_d
+                                let coord = "Lon : "+weather_d.coord.lon + " Lat : "+weather_d.coord.lat;
+                                let main_temp = "Temp : "+weather_d.main.temp                            
+                                let main_temp_min = "temp_min : "+ weather_d.main.temp_min
+                                let main_temp_max = "temp_max : " + weather_d.main.temp_max
+                                let main_pressure = "pressure : " +weather_d.main.pressure
+                                let main_humidity = "humidity : " +weather_d.main.humidity
+                                let main_visibility = "visibility : "+ weather_d.visibility
+                                let main_speed = "wind speed : " +weather_d.wind.speed
+                                let main_deg = "wind deg:" +weather_d.wind.deg
+                                let w_arr  = [ coord, main_temp, main_temp_min, main_temp_max, main_pressure, main_humidity, main_visibility, main_speed, main_deg]
+                                const modal3_body = document.getElementById("weather_condition_modal"); 
+                                let i = 0;
+                                Array.from(modal3_body.children).forEach(function (element) {
+                                    element.textContent = w_arr[i];
+                                    i++;
+                                });
+                                const modal2 = document.getElementById("modal2");
+                                const mod
+                                alert("The nearest port is " + nearPort);
                             } catch (error) {
                                 console.error("Error parsing response:", error);
                             }
