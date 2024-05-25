@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css'>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.16.0/mapbox-gl-draw.css'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body translate="no">
+    <ul style="z-index: 999;">
+        <li>
+            <a href="#" class="show-modal" data-modal="modal1">
+                <i class="ai-location"></i>
+                <span>Weather Updates
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="show-modal" data-modal="modal2">
+                <i class="ai-cloud"></i>
+                <span>Flight Health</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="show-modal" data-modal="modal3">
+                <i class="ai-location"></i>
+                <span>Airport Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="show-modal" data-modal="modal4">
+                <i class="ai-cloud"></i>
+                <span>AI assistant</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="ai-book-open"></i>
+                <span>Books</span>
+            </a>
+        </li>
+        <li id="buttonContainer">
+            <a href="#" id="resetViewButton">
+                <i class="fal fa-undo"></i>
+                <span>Reset View</span>
+            </a>
+            <a href="#" id="focusCenterButton">
+                <i class="fal fa-crosshairs"></i>
+                <span>Focus</span>
+            </a>
+            <a href="#" id="changeStyleButton">
+                <i class="ai-gear"></i>
+                <span>Settings</span>
+            </a>
+            <a href="#">
+                <i class="ai-person"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+    </ul>
+    <div id="modal1" class="modal active" style="display: block;">
+        <div class="modal-wrapper">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form id="uploadForm">
+                        <input type="text" id="start_latitude" value="19.0760" placeholder="Enter text here">
+                        <input type="text" id="start_longitude" value="72.8777" placeholder="Enter text here">
+                        <input type="text" id="end_latitude" value="34.0522" placeholder="Enter text here">
+                        <input type="text" id="end_longitude" value="-118.2437" placeholder="Enter text here">
+                        <input type="text" id="obstacle_points_latitude1" value="42.797095"
+                            placeholder="Enter text here" hidden>
+                        <input type="text" id="obstacle_points_longitude1" value="-80.35164463"
+                            placeholder="Enter text here" hidden>
+                        <input type="text" id="obstacle_points_latitude2" value="41.797095"
+                            placeholder="Enter text here" hidden>
+                        <input type="text" id="obstacle_points_longitude2" value="82.797095"
+                            placeholder="Enter text here" hidden>
+                        <button type="submit">Submit</button>
+                        <button type="close" class="close">Close</button>
+                        <!-- <div class="close modal-close">&times;</div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal2" class="modal active" style="display: block;">
+        <div class="modal-wrapper">
+            <div class="modal-content">
+                <div class="close modal-close">&times;</div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal active" style="display: block;">
+        <span class="threedicon">
+            <i class="fas fa-cloud"></i>
+        </span>
+        <div class="modal-wrapper">
+            <div class="modal-content">
+                <div class="close modal-close">&times;</div>
+                <div class="modal-body">
+                    Airport Information
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal active" style="display: block;">
+        <div class="modal-wrapper">
+            <div class="modal-content">
+                <div class="close modal-close">&times;</div>
+                <div class="modal-body">
+
+                    <label for="indicator-check" class="label">
+                        <div class="toggle-container">
+                            <div class="toggle-container-inner">
+                                <div class="toggle-container-inner-ticks">
+                                    <div class="toggle-container-inner-ticks-cover"></div>
+                                    <div class="toggle-container-inner-ticks-container">
+                                        <div class="tick big e">E</div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick big m">
+                                            <small>1</small>/<small>2</small>
+                                        </div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick big f">F</div>
+                                    </div>
+                                    <input type="checkbox" id="indicator-check">
+                                    <div class="toggle-container-inner-ticks-indicator" style="margin-left: 0px;"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.16.0/mapbox-gl-draw.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script>
+        document.querySelectorAll('.toggle-container-inner-ticks-indicator').forEach(function (element) {
+            element.style.marginLeft = '100px';
+        });
+    </script>
+    <script>
+        document.getElementById('changeStyleButton').addEventListener('click', function () {
+            var textElements = document.getElementsByClassName('mapboxgl-control-container');
+            if (textElements.length > 0) {
+                var textElement = textElements[0]; // Access the first element with class 'text'
+                textElement.classList.toggle('displaynone');
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYWx1a2FjaCIsImEiOiJ3US1JLXJnIn0.xrpBHCwvzsX76YlO-08kjg';
+            const map = new mapboxgl.Map({
+                container: 'map', // Container ID
+                style: 'mapbox://styles/mapbox/streets-v12', // Map style to use
+                center: [19.0760, 72.8777], // Starting position [lng, lat]
+                zoom: 3, // Starting zoom level
+                pitch: 0, // Tilt the map for 3D effect
+                bearing: 0 // Rotate the map
+            });
+            let centercordlat;
+            let centercordlon;
+            document.getElementById("uploadForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                var formData = {
+                    start_latitude: document.getElementById("start_latitude").value,
+                    start_longitude: document.getElementById("start_longitude").value,
+                    end_latitude: document.getElementById("end_latitude").value,
+                    end_longitude: document.getElementById("end_longitude").value,
+                    obstacle_points_latitude1: document.getElementById("obstacle_points_latitude1").value,
+                    obstacle_points_longitude1: document.getElementById("obstacle_points_longitude1").value,
+                    obstacle_points_latitude2: document.getElementById("obstacle_points_latitude2").value,
+                    obstacle_points_longitude2: document.getElementById("obstacle_points_longitude2").value
+                };
+                centercordlat = formData.start_longitude
+                centercordlon = formData.start_latitude
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://localhost:5000/your_flask_route", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            try {
+                                var response = JSON.parse(xhr.responseText);
+                                console.log("Response from server:", response); // Log the response to console
+                                if (response && response.message && Array.isArray(response.message)) {
+                                    const coordinates = response.message;
+                                    const points = coordinates.map(coord => [coord[1], coord[0]]);
+                                    const line = turf.lineString(points);
+                                    if (map.getLayer('route')) {
+                                        map.removeLayer('route');
+                                    }
+                                    if (map.getSource('route')) {
+                                        map.removeSource('route');
+                                    }
+                                    map.addSource('route', {
+                                        'type': 'geojson',
+                                        'data': line
+                                    });
+                                    map.addLayer({
+                                        'id': 'route',
+                                        'type': 'line',
+                                        'source': 'route',
+                                        'layout': {
+                                            'line-join': 'round',
+                                            'line-cap': 'round'
+                                        },
+                                        'paint': {
+                                            'line-color': '#ff0000',
+                                            'line-width': 4
+                                        }
+                                    });
+                                    map.flyTo({
+                                        center: [formData.start_longitude, formData.start_latitude],
+                                        zoom: 12, // Adjust the zoom level as needed
+                                        essential: true // This animation is considered essential with respect to prefers-reduced-motion
+                                    });
+                                } else {
+                                    console.error("Invalid response format. Expected an array of coordinates.");
+                                }
+                            } catch (error) {
+                                console.error("Error parsing response:", error);
+                            }
+                        } else {
+                            console.error("Failed to fetch data. Status code:", xhr.status);
+                        }
+                    }
+                };
+                xhr.send(JSON.stringify(formData));
+            });
+
+            map.on('load', () => {
+                map.addSource('mapbox-dem', {
+                    'type': 'raster-dem',
+                    'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                    'tileSize': 512,
+                    'maxzoom': 14
+                });
+                map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+                map.addLayer({
+                    'id': '3d-buildings',
+                    'source': 'composite',
+                    'source-layer': 'building',
+                    'filter': ['==', 'extrude', 'true'],
+                    'type': 'fill-extrusion',
+                    'minzoom': 15,
+                    'paint': {
+                        'fill-extrusion-color': '#aaa',
+                        'fill-extrusion-height': [
+                            'interpolate',
+                            ['linear'],
+                            ['zoom'],
+                            15,
+                            0,
+                            15.05,
+                            ['get', 'height']
+                        ],
+                        'fill-extrusion-base': [
+                            'interpolate',
+                            ['linear'],
+                            ['zoom'],
+                            15,
+                            0,
+                            15.05,
+                            ['get', 'min_height']
+                        ],
+                        'fill-extrusion-opacity': 0.6
+                    }
+                });
+
+                // Add draw control if needed
+                var draw = new MapboxDraw({
+                    displayControlsDefault: true,
+                });
+                map.addControl(draw);
+            });
+
+            let resetViewFlag = true;
+            document.getElementById('resetViewButton').addEventListener('click', () => {
+                if (resetViewFlag) {
+                    map.easeTo({
+                        pitch: 0,
+                        bearing: 0
+                    });
+                } else {
+                    map.easeTo({
+                        pitch: 60,
+                        bearing: -17.6
+                    });
+                }
+                resetViewFlag = !resetViewFlag;
+                const modalElements = document.querySelectorAll('.modal-wrapper, .mapboxgl-ctrl-top-right');
+                const modalicons = document.querySelectorAll('.threedicon');
+                modalElements.forEach(modalElement => {
+                    if (resetViewFlag) {
+                        modalElement.classList.add('threed');
+                    } else {
+                        modalElement.classList.remove('threed');
+                    }
+                });
+                modalicons.forEach(modalicon => {
+                    if (resetViewFlag) {
+                        modalicon.classList.add('thdicon');
+                    } else {
+                        modalicon.classList.remove('thdicon');
+                    }
+                });
+            });
+
+            document.getElementById('focusCenterButton').addEventListener('click', () => {
+                map.easeTo({
+                    center: [centercordlat, centercordlon],
+                    zoom: 12
+                });
+            });
+        });
+
+
+    </script>
+    <script src='https://unpkg.com/akar-icons-fonts'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="/static/draggablemodal.js"></script>
+</body>
+
+</html>

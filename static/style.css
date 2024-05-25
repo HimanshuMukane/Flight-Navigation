@@ -1,0 +1,408 @@
+
+.label {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .label #indicator-check {
+    display: none;
+  }
+  .label #indicator-check:checked + div {
+    margin-left: 100px;
+  }
+  .label:hover .toggle-container {
+    box-shadow: 0px 0px 15px -3px rgba(200, 200, 200, 0.6), inset 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+  }
+  .label .text {
+    text-align: center;
+    margin-top: 10px;
+    color: #7d7d7d;
+  }
+  .label .text p {
+    font-size: 14px;
+  }
+  
+  .toggle-container {
+    width: 260px;
+    height: 120px;
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.75), inset 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle-container-inner {
+    box-shadow: inset 0px 0px 70px 15px rgba(0, 0, 0, 0.5);
+    background-color: #101010;
+    width: 240px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .toggle-container-inner-ticks {
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.75), inset 0px 25px 26px -26px rgba(236, 236, 236, 0.5);
+    background-color: #080808;
+    display: flex;
+    padding: 10px 30px;
+    position: relative;
+  }
+  .toggle-container-inner-ticks-cover {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .toggle-container-inner-ticks-container {
+    display: flex;
+  }
+  .toggle-container-inner-ticks-container .tick {
+    color: white;
+    width: 10px;
+  }
+  .toggle-container-inner-ticks-container .tick::after {
+    content: " ";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 2px;
+    height: 10px;
+    background: #8B8B8B;
+    position: absoulute;
+  }
+  .toggle-container-inner-ticks-container .tick.big {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .toggle-container-inner-ticks-container .tick.big::after {
+    height: 15px;
+    margin-top: 10px;
+  }
+  .toggle-container-inner-ticks-container .tick.big small {
+    font-size: 8px;
+    font-weight: normal;
+  }
+  .toggle-container-inner-ticks-container .tick.e {
+    color: #CB3A3A;
+  }
+  .toggle-container-inner-ticks-container .tick.f {
+    color: #03c703;
+  }
+  .toggle-container-inner-ticks-indicator {
+    width: 10px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    
+    transition: all 1.8s ease;
+    background-color: rgba(250, 22, 22, 0.3);
+  }
+  
+  .modal {
+    display: none;
+    height: 200px;
+    z-index: 9;
+    width: 200px;
+}
+
+.modal.active .modal-content {
+    transform: rotateX(0) !important;
+    transition: transform 1s ease-in-out;
+}
+
+#modal1 {
+    position: fixed;
+    left: 80vw;
+    top: 5vh;
+}
+
+#modal2 {
+    position: fixed;
+    left: 5vw;
+    top: 5vh;
+}
+
+#modal3 {
+    position: fixed;
+    left: 5vw;
+    top: 80vh;
+}
+
+#modal4 {
+    position: fixed;
+    left: 80vw;
+    top: 80vh;
+}
+
+.modal .modal-wrapper {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 0;
+    top: 0;
+    perspective: 2000px;
+}
+
+.modal .modal-wrapper .modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: all 0.4s;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.modal .modal-wrapper .modal-content {
+    position: relative;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #000;
+    border-radius: 4px;
+    transform: rotateX(-70deg);
+    transition: transform 0.5s;
+    perspective: 500px; 
+}
+
+/* .modal-wrapper.threed {
+    transition: transform 1s ease-in-out;
+    transform: perspective(500px)  rotateX(45deg) translateY(50px);
+} */
+.threedicon i {
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    font-size: 20px;
+    z-index: 999;
+    left: 50px;
+    transform: perspective(1000px) translateY(10%) ;
+}
+/* .thdicon i{
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    transform: scale(1.5) !important;
+    left: 50px;
+    transform: perspective(1000px) translateY(-50%) !important;
+} */
+
+
+.modal .modal-wrapper .modal-content .modal-close {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: translateY(-50%) translateY(-5px);
+    transition: all 0.4s;
+}
+
+.modal .modal-wrapper .modal-content .modal-header .modal-close:hover {
+    color: #5fc6da;
+}
+
+.modal .modal-wrapper .modal-content .modal-body {
+    padding: 20px 20px 20px 20px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.mapboxgl-control-container {
+    display: block ;
+}
+
+.displaynone {
+    display: none;
+}
+.modal .modal-wrapper .modal-content .modal-action {
+    padding: 10px 30px 20px;
+}
+
+.modal .modal-wrapper .modal-content .modal-action .close {
+    background-color: #d0098d;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: all 0.4s;
+}
+
+.modal .modal-wrapper .modal-content .modal-action .close:hover {
+    background-color: #af0576;
+}
+
+
+.modal-content form {
+    padding: 0px 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content button[type="submit"], 
+.modal-content button[type="close"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.modal-content button[type="close"] {
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button[type="close"]:hover {
+    background-color: #af4c4c;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #f2f5f7;
+    perspective: 3000px;
+}
+.mapboxgl-ctrl-bottom-right {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #05043e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.25rem;
+    box-shadow: 0 10px 50px 0 rgba(5, 4, 62, 0.25);
+}
+
+li:nth-child(6) {
+    margin-top: 8rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #363664;
+}
+
+li+li {
+    margin-top: 0.75rem;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+a:hover,
+a:focus,
+a.active {
+    background-color: #30305a;
+    outline: 0;
+}
+
+a:hover span,
+a:focus span,
+a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+a i {
+    font-size: 1.375rem;
+}
+
+a span {
+    position: absolute;
+    background-color: #30305a;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    left: calc(100% + 1.5rem);
+    transform-origin: center left;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.15s ease;
+}
+
+a span:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: #30305a;
+    left: -5px;
+    top: 50%;
+    transform: translatey(-50%) rotate(45deg);
+    border-radius: 3px;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+#map { cursor: grab; top: 0; bottom: 0; width: 100%; }

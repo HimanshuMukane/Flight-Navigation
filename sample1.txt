@@ -1,0 +1,3642 @@
+Airline	Ident	Aircraft	Status	Departure		Arrival	
+
+
+SpiceJet
+	
+SEJ8257
+		
+		Scheduled (in 23 hours 15 minutes)
+		
+
+Fri 02:35AM IST
+
+	
+	
+
+			05:00AM IST Fri
+
+	
+
+
+
+Air India
+	
+AIC860
+	
+		A320
+		
+		Scheduled (in 22 hours 55 minutes)
+		
+
+Fri 02:15AM IST
+
+	
+	
+
+			04:30AM IST Fri
+
+	
+
+
+
+IndiGO
+	
+IGO2716
+	
+		A21N
+		
+		Scheduled (in 22 hours 40 minutes)
+		
+
+Fri 02:00AM IST
+
+	
+	
+
+			04:00AM IST Fri
+
+	
+
+
+
+IndiGO
+	
+IGO519
+	
+		A21N
+		
+		Scheduled (in 20 hours 10 minutes)
+		
+
+Thu 11:30PM IST
+
+	
+	
+
+			01:40AM IST Fri
+
+	
+
+
+
+SpiceJet
+	
+SEJ8279
+	
+		737
+		
+		Scheduled (in 19 hours 40 minutes)
+		
+
+Thu 11:00PM IST
+
+	
+	
+
+			01:10AM IST Fri
+
+	
+
+
+
+Air India
+	
+AIC814
+	
+		A20N
+		
+		Scheduled (in 19 hours 10 minutes)
+		
+
+Thu 10:30PM IST
+
+	
+	
+
+			12:45AM IST Fri
+
+	
+
+
+
+IndiGO
+	
+IGO6114
+	
+		A21N
+		
+		Scheduled (in 18 hours 55 minutes)
+		
+
+Thu 10:15PM IST
+
+	
+	
+
+			12:25AM IST Fri
+
+	
+
+
+
+Vistara
+	
+VTI999
+	
+		A321
+		
+		Scheduled (in 18 hours 35 minutes)
+		
+
+Thu 09:55PM IST
+
+	
+	
+
+			12:15AM IST Fri
+
+	
+
+
+
+Vistara
+	
+VTI981
+	
+		A321
+		
+		Scheduled (in 18 hours 10 minutes)
+		
+
+Thu 09:30PM IST
+
+	
+	
+
+			11:40PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC605
+	
+		A320
+		
+		Scheduled (in 18 hours)
+		
+
+Thu 09:20PM IST
+
+	
+	
+
+			11:35PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO395
+	
+		A21N
+		
+		Scheduled (in 17 hours 40 minutes)
+		
+
+Thu 09:00PM IST
+
+	
+	
+
+			11:15PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI957
+	
+		A320
+		
+		Scheduled (in 17 hours 20 minutes)
+		
+
+Thu 08:40PM IST
+
+	
+	
+
+			11:05PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6016
+	
+		A21N
+		
+		Scheduled (in 16 hours 40 minutes)
+		
+
+Thu 08:00PM IST
+
+	
+	
+
+			10:20PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC805
+	
+		A359
+		
+		Scheduled (in 16 hours 40 minutes)
+		
+
+Thu 08:00PM IST
+
+	
+	
+
+			10:25PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI985
+	
+		A321
+		
+		Scheduled (in 16 hours 25 minutes)
+		
+
+Thu 07:45PM IST
+
+	
+	
+
+			10:00PM IST Thu
+
+	
+
+
+
+SpiceJet
+	
+SEJ709
+	
+		737
+		
+		Scheduled (in 16 hours 15 minutes)
+		
+
+Thu 07:35PM IST
+
+	
+	
+
+			10:00PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO354
+	
+		A21N
+		
+		Scheduled (in 15 hours 55 minutes)
+		
+
+Thu 07:15PM IST
+
+	
+	
+
+			09:25PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC624
+	
+		A20N
+		
+		Scheduled (in 15 hours 50 minutes)
+		
+
+Thu 07:10PM IST
+
+	
+	
+
+			09:20PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI977
+	
+		A320
+		
+		Scheduled (in 15 hours 40 minutes)
+		
+
+Thu 07:00PM IST
+
+	
+	
+
+			09:15PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2327
+	
+		A21N
+		
+		Scheduled (in 14 hours 55 minutes)
+		
+
+Thu 06:15PM IST
+
+	
+	
+
+			08:20PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI955
+	
+		A320
+		
+		Scheduled (in 14 hours 30 minutes)
+		
+
+Thu 05:50PM IST
+
+	
+	
+
+			08:00PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO864
+	
+		A21N
+		
+		Scheduled (in 13 hours 55 minutes)
+		
+
+Thu 05:15PM IST
+
+	
+	
+
+			07:25PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC441
+	
+		B77W
+		
+		Scheduled (in 13 hours 55 minutes)
+		
+
+Thu 05:15PM IST
+
+	
+	
+
+			08:05PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI941
+	
+		A320
+		
+		Scheduled (in 13 hours 30 minutes)
+		
+
+Thu 04:50PM IST
+
+	
+	
+
+			07:05PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6318
+	
+		A21N
+		
+		Scheduled (in 12 hours 55 minutes)
+		
+
+Thu 04:15PM IST
+
+	
+	
+
+			06:20PM IST Thu
+
+	
+
+
+
+Akasa Air
+	
+AKJ1128
+	
+		B38M
+		
+		Scheduled (in 12 hours 40 minutes)
+		
+
+Thu 04:00PM IST
+
+	
+	
+
+			06:20PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI933
+	
+		A321
+		
+		Scheduled (in 12 hours 10 minutes)
+		
+
+Thu 03:30PM IST
+
+	
+	
+
+			05:35PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6022
+	
+		A21N
+		
+		Scheduled (in 11 hours 55 minutes)
+		
+
+Thu 03:15PM IST
+
+	
+	
+
+			05:20PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC856
+	
+		A320
+		
+		Scheduled (in 11 hours 25 minutes)
+		
+
+Thu 02:45PM IST
+
+	
+	
+
+			05:00PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI951
+	
+		A320
+		
+		Scheduled (in 11 hours)
+		
+
+Thu 02:20PM IST
+
+	
+	
+
+			04:25PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2676
+	
+		A21N
+		
+		Scheduled (in 10 hours 40 minutes)
+		
+
+Thu 02:10PM IST
+
+	
+	
+
+			04:10PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI993
+	
+		A320
+		
+		Scheduled (in 9 hours 30 minutes)
+		
+
+Thu 12:50PM IST
+
+	
+	
+
+			03:00PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2009
+	
+		A21N
+		
+		Scheduled (in 9 hours 10 minutes)
+		
+
+Thu 12:30PM IST
+
+	
+	
+
+			02:40PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6047
+	
+		A21N
+		
+		Scheduled (in 7 hours 55 minutes)
+		
+
+Thu 11:15AM IST
+
+	
+	
+
+			01:35PM IST Thu
+
+	
+
+
+
+Akasa Air
+	
+AKJ1411
+	
+		B38M
+		
+		Scheduled (in 7 hours 35 minutes)
+		
+
+Thu 11:00AM IST
+
+	
+	
+
+			01:05PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC865
+	
+		A359
+		
+		Scheduled (in 7 hours 40 minutes)
+		
+
+Thu 10:45AM IST
+
+	
+	
+
+			01:05PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI995
+	
+		A320
+		
+		Scheduled (in 7 hours)
+		
+
+Thu 10:20AM IST
+
+	
+	
+
+			12:35PM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6328
+	
+		A21N
+		
+		Scheduled (in 6 hours 40 minutes)
+		
+
+Thu 10:00AM IST
+
+	
+	
+
+			12:15PM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI927
+	
+		A320
+		
+		Scheduled (in 6 hours 10 minutes)
+		
+
+Thu 09:30AM IST
+
+	
+	
+
+			11:40AM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC678
+	
+		A321
+		
+		Scheduled (in 5 hours 35 minutes)
+		
+
+Thu 09:00AM IST
+
+	
+	
+
+			11:20AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6107
+	
+		A21N
+		
+		Scheduled (in 5 hours 40 minutes)
+		
+
+Thu 09:00AM IST
+
+	
+	
+
+			11:05AM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI963
+	
+		A321
+		
+		Scheduled (in 5 hours 35 minutes)
+		
+
+Thu 08:55AM IST
+
+	
+	
+
+			11:10AM IST Thu
+
+	
+
+
+
+Akasa Air
+	
+AKJ1719
+	
+		B38M
+		
+		Scheduled (in 5 hours 20 minutes)
+		
+
+Thu 08:40AM IST
+
+	
+	
+
+			10:45AM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC665
+	
+		A321
+		
+		Scheduled (in 4 hours 40 minutes)
+		
+
+Thu 08:00AM IST
+
+	
+	
+
+			10:20AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2169
+	
+		A21N
+		
+		Scheduled (in 4 hours 30 minutes)
+		
+
+Thu 08:00AM IST
+
+	
+	
+
+			10:10AM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI943
+	
+		A320
+		
+		Scheduled (in 4 hours 10 minutes)
+		
+
+Thu 07:30AM IST
+
+	
+	
+
+			09:45AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6814
+	
+		A21N
+		
+		Scheduled (in 3 hours 30 minutes)
+		
+
+Thu 07:00AM IST
+
+	
+	
+
+			08:55AM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC887
+	
+		A321
+		
+		Scheduled (in 3 hours 40 minutes)
+		
+
+Thu 07:00AM IST
+
+	
+	
+
+			09:15AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2237
+	
+		A21N
+		
+		Scheduled (in 2 hours 40 minutes)
+		
+
+Thu 06:00AM IST
+
+	
+	
+
+			07:55AM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI975
+	
+		A320
+		
+		Scheduled (in 2 hours 30 minutes)
+		
+
+Thu 05:50AM IST
+
+	
+	
+
+			08:00AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO449
+	
+		A21N
+		
+		Scheduled (in 1 hours 40 minutes)
+		
+
+Thu 05:00AM IST
+
+	
+	
+
+			07:10AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2766
+	
+		A21N
+		
+		Scheduled (in 25 minutes)
+		
+
+Thu 03:45AM IST
+
+	
+	
+
+			05:40AM IST Thu
+
+	
+
+
+
+SpiceJet
+	
+SEJ8257
+	
+		737
+		
+Scheduled / Delayed
+	
+
+Thu 02:35AM IST
+
+	
+	
+
+			05:00AM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC860
+	
+		A320
+		
+En Route / On Time
+	
+
+Thu 02:15AM IST
+
+	
+	
+
+			04:30AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO2716
+	
+		A21N
+		
+En Route / On Time
+	
+
+Thu 02:00AM IST
+
+	
+	
+
+			04:00AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO519
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 11:30PM IST
+
+	
+	
+
+			01:40AM IST Thu
+
+	
+
+
+
+SpiceJet
+	
+SEJ8279
+	
+		B38M
+		
+Landed / Taxiing
+	
+
+Wed 11:00PM IST
+
+	
+	
+
+			01:15AM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC814
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Wed 10:30PM IST
+
+	
+	
+
+			12:45AM IST Thu
+
+	
+
+
+
+IndiGO
+	
+IGO6114
+	
+		A21N
+		
+Arrived / Delayed
+	
+
+Wed 10:15PM IST
+
+	
+	
+
+			12:25AM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI999
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 09:55PM IST
+
+	
+	
+
+			12:15AM IST Thu
+
+	
+
+
+
+Vistara
+	
+VTI981
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 09:30PM IST
+
+	
+	
+
+			11:40PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC605
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 09:20PM IST
+
+	
+	
+
+			11:35PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO25Q
+	
+		A21N
+		
+Arrived / Delayed
+	
+
+Wed 09:00PM IST
+
+	
+	
+
+			11:15PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI957
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 08:40PM IST
+
+	
+	
+
+			11:05PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC805
+	
+		A359
+		
+Arrived / Gate Arrival
+	
+
+Wed 08:00PM IST
+
+	
+	
+
+			10:25PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6016
+	
+		A21N
+		
+Arrived / Delayed
+	
+
+Wed 08:00PM IST
+
+	
+	
+
+			10:20PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI985
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:45PM IST
+
+	
+	
+
+			10:00PM IST Wed
+
+	
+
+
+
+SpiceJet
+	
+SEJ709
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:35PM IST
+
+	
+	
+
+			10:00PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO354
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:15PM IST
+
+	
+	
+
+			09:25PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC624
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:10PM IST
+
+	
+	
+
+			09:20PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI977
+	
+		A320
+		
+Arrived / Delayed
+	
+
+Wed 07:00PM IST
+
+	
+	
+
+			09:15PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2327
+	
+		A21N
+		
+Arrived / Delayed
+	
+
+Wed 06:15PM IST
+
+	
+	
+
+			08:20PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI955
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 05:50PM IST
+
+	
+	
+
+			08:00PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO864
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 05:15PM IST
+
+	
+	
+
+			07:25PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC441
+	
+		B77W
+		
+Arrived / Gate Arrival
+	
+
+Wed 05:15PM IST
+
+	
+	
+
+			08:05PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI941
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 04:50PM IST
+
+	
+	
+
+			07:05PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6318
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 04:15PM IST
+
+	
+	
+
+			06:20PM IST Wed
+
+	
+
+
+
+Akasa Air
+	
+AKJ1128
+	
+		B38M
+		
+Arrived / Delayed
+	
+
+Wed 04:00PM IST
+
+	
+	
+
+			06:20PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI933
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 03:30PM IST
+
+	
+	
+
+			05:35PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6022
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 03:15PM IST
+
+	
+	
+
+			05:20PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC856
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 02:45PM IST
+
+	
+	
+
+			05:00PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI951
+	
+		A320
+		
+Arrived / Delayed
+	
+
+Wed 02:20PM IST
+
+	
+	
+
+			04:25PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2676
+	
+		A21N
+		
+Arrived / Delayed
+	
+
+Wed 02:10PM IST
+
+	
+	
+
+			04:10PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC863
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Wed 02:00PM IST
+
+	
+	
+
+			04:15PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2009
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 12:30PM IST
+
+	
+	
+
+			02:40PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI945
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 11:40AM IST
+
+	
+	
+
+			01:50PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6047
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 11:15AM IST
+
+	
+	
+
+			01:35PM IST Wed
+
+	
+
+
+
+Akasa Air
+	
+AKJ1411
+	
+		B38M
+		
+Arrived / Delayed
+	
+
+Wed 11:00AM IST
+
+	
+	
+
+			01:05PM IST Wed
+
+	
+
+
+
+SpiceJet
+	
+VT-SFE
+		
+Arrived
+	
+
+Wed 10:48AM IST
+
+	
+	
+
+			03:09PM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC865
+	
+		A359
+		
+Arrived / Gate Arrival
+	
+
+Wed 10:45AM IST
+
+	
+	
+
+			01:05PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI995
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 10:20AM IST
+
+	
+	
+
+			12:35PM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6328
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 10:00AM IST
+
+	
+	
+
+			12:15PM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI927
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 09:30AM IST
+
+	
+	
+
+			11:40AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6107
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 09:00AM IST
+
+	
+	
+
+			11:05AM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC678
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 09:00AM IST
+
+	
+	
+
+			11:20AM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI963
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 08:55AM IST
+
+	
+	
+
+			11:10AM IST Wed
+
+	
+
+
+
+Akasa Air
+	
+AKJ1719
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Wed 08:40AM IST
+
+	
+	
+
+			10:45AM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC665
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 08:00AM IST
+
+	
+	
+
+			10:20AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2169
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 08:00AM IST
+
+	
+	
+
+			10:10AM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI943
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:30AM IST
+
+	
+	
+
+			09:45AM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC887
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:00AM IST
+
+	
+	
+
+			09:15AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6814
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 07:00AM IST
+
+	
+	
+
+			08:55AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2237
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 06:00AM IST
+
+	
+	
+
+			07:55AM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI975
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 05:50AM IST
+
+	
+	
+
+			08:00AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO449
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 05:00AM IST
+
+	
+	
+
+			07:10AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2766
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 03:45AM IST
+
+	
+	
+
+			05:40AM IST Wed
+
+	
+
+
+
+Quikjet Airlines
+	
+VT-AAZ
+		
+Arrived
+	
+
+Wed 03:19AM IST
+
+	
+	
+
+			04:58AM IST Wed
+
+	
+
+
+
+Blue Dart
+	
+VT-BDD
+		
+Arrived
+	
+
+Wed 03:12AM IST
+
+	
+	
+
+			04:33AM IST Wed
+
+	
+
+
+
+SpiceJet
+	
+SEJ8257
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Wed 02:35AM IST
+
+	
+	
+
+			05:00AM IST Wed
+
+	
+
+
+
+Blue Dart
+	
+BDA201
+		
+Arrived
+	
+
+Wed 02:24AM IST
+
+	
+	
+
+			04:01AM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC860
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Wed 02:15AM IST
+
+	
+	
+
+			04:30AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO2716
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Wed 02:00AM IST
+
+	
+	
+
+			04:00AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO519
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 11:30PM IST
+
+	
+	
+
+			01:40AM IST Wed
+
+	
+
+
+
+SpiceJet
+	
+SEJ8279
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Tue 11:00PM IST
+
+	
+	
+
+			01:10AM IST Wed
+
+	
+
+
+
+Air India
+	
+AIC814
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Tue 10:30PM IST
+
+	
+	
+
+			12:45AM IST Wed
+
+	
+
+
+
+IndiGO
+	
+IGO6114
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 10:15PM IST
+
+	
+	
+
+			12:25AM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI999
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:55PM IST
+
+	
+	
+
+			12:15AM IST Wed
+
+	
+
+
+
+Vistara
+	
+VTI981
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:30PM IST
+
+	
+	
+
+			11:40PM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC605
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:20PM IST
+
+	
+	
+
+			11:35PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO395
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:00PM IST
+
+	
+	
+
+			11:15PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI957
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:40PM IST
+
+	
+	
+
+			11:05PM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC805
+	
+		A359
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:00PM IST
+
+	
+	
+
+			10:25PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6016
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:00PM IST
+
+	
+	
+
+			10:20PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI985
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:45PM IST
+
+	
+	
+
+			10:00PM IST Tue
+
+	
+
+
+
+SpiceJet
+	
+SEJ709
+	
+		737
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:35PM IST
+
+	
+	
+
+			10:00PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO354
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:15PM IST
+
+	
+	
+
+			09:25PM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC624
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:10PM IST
+
+	
+	
+
+			09:20PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI977
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:00PM IST
+
+	
+	
+
+			09:15PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO2327
+	
+		A21N
+		
+Arrived / Delayed
+	
+
+Tue 06:15PM IST
+
+	
+	
+
+			08:20PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI955
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 05:50PM IST
+
+	
+	
+
+			08:00PM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC441
+	
+		B77W
+		
+Arrived / Gate Arrival
+	
+
+Tue 05:15PM IST
+
+	
+	
+
+			08:05PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO864
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 05:15PM IST
+
+	
+	
+
+			07:25PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI941
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 04:50PM IST
+
+	
+	
+
+			07:05PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6318
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 04:15PM IST
+
+	
+	
+
+			06:20PM IST Tue
+
+	
+
+
+
+Akasa Air
+	
+AKJ1128
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Tue 04:00PM IST
+
+	
+	
+
+			06:20PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI933
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 03:30PM IST
+
+	
+	
+
+			05:35PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6022
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 03:15PM IST
+
+	
+	
+
+			05:20PM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC856
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 02:45PM IST
+
+	
+	
+
+			05:00PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI951
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 02:20PM IST
+
+	
+	
+
+			04:25PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO2676
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 02:10PM IST
+
+	
+	
+
+			04:10PM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC863
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Tue 02:00PM IST
+
+	
+	
+
+			04:15PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI993
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 12:50PM IST
+
+	
+	
+
+			03:00PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO2009
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 12:30PM IST
+
+	
+	
+
+			02:40PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6047
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 11:15AM IST
+
+	
+	
+
+			01:35PM IST Tue
+
+	
+
+
+
+Akasa Air
+	
+AKJ1411
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Tue 11:00AM IST
+
+	
+	
+
+			01:05PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI995
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 10:20AM IST
+
+	
+	
+
+			12:35PM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6328
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 10:00AM IST
+
+	
+	
+
+			12:15PM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI927
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:30AM IST
+
+	
+	
+
+			11:40AM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6107
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:00AM IST
+
+	
+	
+
+			11:05AM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC678
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 09:00AM IST
+
+	
+	
+
+			11:20AM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI963
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:55AM IST
+
+	
+	
+
+			11:10AM IST Tue
+
+	
+
+
+
+Akasa Air
+	
+AKJ1719
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:40AM IST
+
+	
+	
+
+			10:45AM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC665
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:00AM IST
+
+	
+	
+
+			10:20AM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO2169
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 08:00AM IST
+
+	
+	
+
+			10:10AM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI943
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:30AM IST
+
+	
+	
+
+			09:45AM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO6814
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:00AM IST
+
+	
+	
+
+			08:55AM IST Tue
+
+	
+
+
+
+Air India
+	
+AIC887
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Tue 07:00AM IST
+
+	
+	
+
+			09:15AM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO2237
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 06:00AM IST
+
+	
+	
+
+			07:55AM IST Tue
+
+	
+
+
+
+Vistara
+	
+VTI975
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Tue 05:50AM IST
+
+	
+	
+
+			08:00AM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO449
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 05:00AM IST
+
+	
+	
+
+			07:10AM IST Tue
+
+	
+
+
+
+IndiGO
+	
+IGO2766
+	
+		A21N
+		
+Arrived / Gate Arrival
+	
+
+Tue 03:45AM IST
+
+	
+	
+
+			05:40AM IST Tue
+
+	
+
+
+
+Blue Dart
+	
+BDA803
+		
+Arrived
+	
+
+Tue 02:49AM IST
+
+	
+	
+
+			04:33AM IST Tue
+
+	
+
+
+
+Blue Dart
+	
+BDA201
+		
+Arrived
+	
+
+Tue 02:25AM IST
+
+	
+	
+
+			04:13AM IST Tue
+
+	
+
+
+Unknown Owner
+	
+VT-OMM
+		
+Arrived
+	
+
+Mon 08:10PM IST
+
+	
+	
+
+			09:43PM IST Mon
+
+	
+
+
+
+Air India
+	
+AIC863
+	
+		A20N
+		
+Arrived / Gate Arrival
+	
+
+Mon 02:00PM IST
+
+	
+	
+
+			04:15PM IST Mon
+
+	
+
+
+
+Vistara
+	
+VTI945
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Mon 11:40AM IST
+
+	
+	
+
+			01:50PM IST Mon
+
+	
+
+
+
+Air India
+	
+AIC865
+	
+		A359
+		
+Arrived / Gate Arrival
+	
+
+Mon 10:45AM IST
+
+	
+	
+
+			01:05PM IST Mon
+
+	
+
+
+
+SpiceJet
+	
+SEJ8269
+	
+		B38M
+		
+Arrived / Gate Arrival
+	
+
+Sun 08:15PM IST
+
+	
+	
+
+			10:30PM IST Sun
+
+	
+
+
+
+Air India
+	
+AIC849
+	
+		A321
+		
+Arrived / Gate Arrival
+	
+
+Sun 03:55PM IST
+
+	
+	
+
+			06:05PM IST Sun
+
+	
+
+
+
+Vistara
+	
+VTI945
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Sun 11:40AM IST
+
+	
+	
+
+			01:50PM IST Sun
+
+	
+
+
+
+Quikjet Airlines
+	
+VT-BAZ
+		
+Arrived
+	
+
+Sun 03:18AM IST
+
+	
+	
+
+			04:59AM IST Sun
+
+	
+
+
+
+Blue Dart
+	
+BDA803
+		
+Arrived
+	
+
+Sun 03:04AM IST
+
+	
+	
+
+			04:44AM IST Sun
+
+	
+
+
+
+Blue Dart
+	
+BDA201
+		
+Arrived
+	
+
+Sun 02:26AM IST
+
+	
+	
+
+			04:15AM IST Sun
+
+	
+
+
+
+Air India
+	
+AIC628
+	
+		A359
+		
+Arrived / Gate Arrival
+	
+
+Sat 06:40PM IST
+
+	
+	
+
+			08:55PM IST Sat
+
+	
+
+
+
+Vistara
+	
+VTI993
+	
+		A320
+		
+Arrived / Gate Arrival
+	
+
+Sat 12:50PM IST
+
+	
+	
+
+			03:00PM IST Sat
+
+	
+
+
+
+Quikjet Airlines
+	
+FQA321
+		
+Arrived
+	
+
+Sat 03:13AM IST
+
+	
+	
+
+			04:53AM IST Sat
+
+	
+
+
+
+Air India
+	
+AIC1863
+	
+		B788
+		
+Arrived
+	
+
+Fri 07:25PM IST
+
+	
+	
+
+			09:52PM IST Fri
+
+	
+
+
+
+Air India
+	
+AIC3769
+		
+Arrived
+	
+
+Fri 03:59PM IST
+
+	
+	
+
+			06:20PM IST Fri
+
+	
+
+
+Unknown Owner
+	
+VT-RJL
+		
+Arrived
+	
+
+Fri 03:09PM IST
+
+	
+	
+
+			04:33PM IST Fri
+
+	
+
+
+Unknown Owner
+	
+VT-JSK
+		
+Arrived
+	
+
+Fri 12:02PM IST
+
+	
+	
+
+			01:40PM IST Fri
+
+	
+
+
+Unknown Owner
+	
+VU-AVV
+		
+Arrived
+	
+
+Fri 08:52AM IST
+
+	
+	
+
+			10:23AM IST Fri
+
+	
+
+
+
+IndiGO
+	
+IGO57M
+	
+		A21N
+		
+Arrived
+	
+
+Fri 02:13AM IST
+
+	
+	
+
+			04:17AM IST Fri
+
+	
+
+
+
+Air India
+	
+AIC1865
+	
+		B788
+		
+Arrived
+	
+
+Thu 08:47PM IST
+
+	
+	
+
+			10:31PM IST Thu
+
+	
+
+
+
+Air India
+	
+AIC1605
+	
+		B77L
+		
+Arrived
+	
+
+Thu 10:08AM IST
+
+	
+	
+
+			11:49AM IST Thu

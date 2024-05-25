@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Toggle</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            border: 1px solid plum;
+            width: 20rem;
+            padding: 1rem;
+            margin: 5% auto;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            text-align: center;
+        }
+
+        .switches-container {
+            width: 16rem;
+            position: relative;
+            display: flex;
+            padding: 0;
+            position: relative;
+            background: goldenrod;
+            line-height: 3rem;
+            border-radius: 3rem;
+            margin: 0 auto;
+        }
+
+        .switches-container input {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+        }
+
+        .switches-container label {
+            width: 50%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+        }
+
+        .switch-wrapper {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            padding: 0.15rem;
+            z-index: 3;
+            transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+        }
+
+        .switch {
+            border-radius: 3rem;
+            background: white;
+            height: 100%;
+        }
+
+        .switch div {
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            display: block;
+            color: goldenrod;
+            transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
+            will-change: opacity;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .switches-container input:nth-of-type(1):checked~.switch-wrapper {
+            transform: translateX(0%);
+        }
+
+        .switches-container input:nth-of-type(2):checked~.switch-wrapper {
+            transform: translateX(100%);
+        }
+
+        .switches-container input:nth-of-type(1):checked~.switch-wrapper .switch div:nth-of-type(1) {
+            opacity: 1;
+        }
+
+        .switches-container input:nth-of-type(2):checked~.switch-wrapper .switch div:nth-of-type(2) {
+            opacity: 1;
+        }
+
+        .input-container {
+            display: none;
+            padding: 10px;
+        }
+
+        .input-container.active {
+            display: block;
+        }
+
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .input-container button {
+            background-color: goldenrod;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body translate="no">
+    <div class="container">
+        <div class="switches-container">
+            <input type="radio" id="switchLocation" name="switchPlan" value="Location" checked="checked" />
+            <input type="radio" id="switchLongitudeLatitude" name="switchPlan" value="LongitudeLatitude" />
+            <label for="switchLocation">Location</label>
+            <label for="switchLongitudeLatitude">Longitude/Latitude</label>
+            <div class="switch-wrapper">
+                <div class="switch">
+                    <div>Location</div>
+                    <div>Longitude/Latitude</div>
+                </div>
+            </div>
+        </div>
+
+        <form id="locationInput" class="input-container active">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" />
+            <button id="locationSubmitBtn">Submit</button>
+        </form>
+
+        <form id="longitudeLatitudeInput" class="input-container">
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" name="longitude" />
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" name="latitude" />
+            <button id="longitudeLatitudeSubmitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var switchLocation = document.getElementById("switchLocation");
+            var switchLongitudeLatitude = document.getElementById("switchLongitudeLatitude");
+            var locationInput = document.getElementById("locationInput");
+            var longitudeLatitudeInput = document.getElementById("longitudeLatitudeInput");
+
+            switchLocation.addEventListener("change", function () {
+                if (this.checked) {
+                    locationInput.classList.add("active");
+                    longitudeLatitudeInput.classList.remove("active");
+                }
+            });
+
+            switchLongitudeLatitude.addEventListener("change", function () {
+                if (this.checked) {
+                    locationInput.classList.remove("active");
+                    longitudeLatitudeInput.classList.add("active");
+                }
+            });
+
+            var locationSubmitBtn = document.getElementById("locationSubmitBtn");
+            locationSubmitBtn.addEventListener("click", function () {
+                var locationValue = document.getElementById("location").value;
+                console.log("Location submitted:", locationValue);
+                // Add your logic for location submission here
+            });
+
+            var longitudeLatitudeSubmitBtn = document.getElementById("longitudeLatitudeSubmitBtn");
+            longitudeLatitudeSubmitBtn.addEventListener("click", function () {
+                var longitudeValue = document.getElementById("longitude").value;
+                var latitudeValue = document.getElementById("latitude").value;
+                console.log("Longitude submitted:", longitudeValue);
+                console.log("Latitude submitted:", latitudeValue);
+                // Add your logic for longitude/latitude submission here
+            });
+        });
+    </script>
+</body>
+
+</html>

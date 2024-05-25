@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload</title>
+</head>
+<body>
+  <form id="uploadForm">
+    <input type="text" id="start_latitude" value="40.7128" placeholder="Enter text here">
+    <input type="text" id="start_longitude" value="-74.0060" placeholder="Enter text here">
+    <input type="text" id="end_latitude" value="34.0522" placeholder="Enter text here">
+    <input type="text" id="end_longitude" value="-118.2437" placeholder="Enter text here">
+    <input type="text" id="obstacle_points_latitude1" value="42.797095" placeholder="Enter text here">
+    <input type="text" id="obstacle_points_longitude1" value="-80.35164463" placeholder="Enter text here">
+    <input type="text" id="obstacle_points_latitude2" value="41.797095" placeholder="Enter text here">
+    <input type="text" id="obstacle_points_longitude2" value="82.797095" placeholder="Enter text here">
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var formData = {
+        start_latitude: document.getElementById("start_latitude").value,
+        start_longitude: document.getElementById("start_longitude").value,
+        end_latitude: document.getElementById("end_latitude").value,
+        end_longitude: document.getElementById("end_longitude").value,
+        obstacle_points_latitude1: document.getElementById("obstacle_points_latitude1").value,
+        obstacle_points_longitude1: document.getElementById("obstacle_points_longitude1").value,
+        obstacle_points_latitude2: document.getElementById("obstacle_points_latitude2").value,
+        obstacle_points_longitude2: document.getElementById("obstacle_points_longitude2").value
+      };
+      console.log("Data to be sent:", formData); // Log the data before sending
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "http://localhost:5000/your_flask_route", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          console.log("Response from server:", response); // Log the response to console
+        }};
+      xhr.send(JSON.stringify(formData));
+    });
+  </script>
+</body>
+</html>

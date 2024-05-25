@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css'>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.16.0/mapbox-gl-draw.css'>
+  
+</head>
+
+<body translate="no">
+  <div id='map-placeholder' style='height: 100vh;'></div>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.16.0/mapbox-gl-draw.js'></script>
+      <script id="rendered-js" >
+mapboxgl.accessToken = 'pk.eyJ1IjoiZHdhbGRtYW5uIiwiYSI6ImNpdndybGd6dDAwMHIyb3BraDJpODZ2YXoifQ.XX8YHbrMNBap5CdW_V1Ygg';
+//Initialise new map
+var map = new mapboxgl.Map({
+  container: 'map-placeholder',
+  style: 'mapbox://styles/mapbox/streets-v9',
+  center: [9, 48.5], // starting position
+  zoom: 5 // starting zoom
+});
+var draw = new MapboxDraw({
+  displayControlsDefault: true });
+
+map.on('load', function () {
+  //Draw Tools
+  map.addControl(draw);
+});
+
+draw.add({
+  type: 'Point',
+  coordinates: [0, 0] });
+
+draw.add({
+  type: 'Point',
+  coordinates: [1, 1] });
+
+draw.add({
+  type: 'Point',
+  coordinates: [2, 2] });
+
+console.log(draw.getAll());
+    </script>
+
+  
+</body>
+
+</html>
