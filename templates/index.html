@@ -28,20 +28,14 @@
         </li>
         <li>
             <a href="#" id="changeStyleButton">
-            <i class="fas fa-pen"></i>
-            <span>Draw on map</span>
-        </a>
-        </li>
-        <li>
-            <a href="#" class="show-modal" data-modal="modal3">
-                <i class="ai-location"></i>
-                <span>Airport Information</span>
+                <i class="fas fa-pen"></i>
+                <span>Draw on map</span>
             </a>
         </li>
         <li>
-            <a href="#" class="show-modal" data-modal="modal2">
-                <i class="ai-cloud"></i>
-                <span>AI assistant</span>
+            <a href="#" class="show-modal" data-modal="modal3">
+                <i class="fas fa-cloud"></i>
+                <span>Weather Details</span>
             </a>
         </li>
         <li id="buttonContainer">
@@ -64,21 +58,64 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <form id="uploadForm">
-                        <input type="text" id="start_latitude" value="19.0760" placeholder="Enter text here">
-                        <input type="text" id="start_longitude" value="72.8777" placeholder="Enter text here">
-                        <input type="text" id="end_latitude" value="34.0522" placeholder="Enter text here">
-                        <input type="text" id="end_longitude" value="-118.2437" placeholder="Enter text here">
-                        <input type="text" id="obstacle_points_latitude1" value="42.797095"
-                            placeholder="Enter text here" hidden>
-                        <input type="text" id="obstacle_points_longitude1" value="-80.35164463"
-                            placeholder="Enter text here" hidden>
-                        <input type="text" id="obstacle_points_latitude2" value="41.797095"
-                            placeholder="Enter text here" hidden>
-                        <input type="text" id="obstacle_points_longitude2" value="82.797095"
-                            placeholder="Enter text here" hidden>
+                        <select id="start_city" onchange="updatestartCoordinates()">
+                            <option value="">Select a city</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Kanpur">Kanpur</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Visakhapatnam">Visakhapatnam</option>
+                            <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Vadodara">Vadodara</option>
+                        </select>
+                        <input type="text" id="start_latitude" value="" hidden>
+                        <input type="text" id="start_longitude" value="" hidden>
+                        <select id="end_city" onchange="updateCoordinates()">
+                            <option value="">Select a city</option>
+
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Kanpur">Kanpur</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Visakhapatnam">Visakhapatnam</option>
+                            <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Vadodara">Vadodara</option>
+                        </select>
+                        <input type="text" id="end_latitude" value="" hidden>
+                        <input type="text" id="end_longitude" value="" hidden>
+                        <input id="city_name" value="Mumbai" hidden>
+                        <input type="text" id="obstacle_points_latitude1" value="42.797095" placeholder="Enter text here" hidden>
+                        <input type="text" id="obstacle_points_longitude1" value="-80.35164463" placeholder="Enter text here" hidden>
+                        <input type="text" id="obstacle_points_latitude2" value="41.797095" placeholder="Enter text here" hidden>
+                        <input type="text" id="obstacle_points_longitude2" value="82.797095" placeholder="Enter text here" hidden>
                         <button type="submit">Submit</button>
                         <button type="close" class="close">Close</button>
-                        <!-- <div class="close modal-close">&times;</div> -->
                     </form>
                 </div>
             </div>
@@ -86,7 +123,7 @@
     </div>
 
 
-    <div id="modal2" class="modal active" style="display: block;">
+    <!-- <div id="modal2" class="modal active" style="display: block;">
         <div class="modal-wrapper">
             <div class="modal-content">
                 <div class="close modal-close">&times;</div>
@@ -94,17 +131,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="modal3" class="modal active" style="display: block;">
-        <span class="threedicon">
+        <!-- <span class="threedicon">
             <i class="fas fa-cloud"></i>
-        </span>
+        </span> -->
         <div class="modal-wrapper">
             <div class="modal-content">
                 <div class="close modal-close">&times;</div>
                 <div class="modal-body">
-                    Airport Information
+                    Weather condition
                 </div>
             </div>
         </div>
@@ -148,13 +185,99 @@
         </div>
     </div>
     <div id="map"></div>
+    <script>
+        function updateCoordinates() {
+            var citySelect1 = document.getElementById("end_city");
+            var latitudeInput1 = document.getElementById("end_latitude");
+            var longitudeInput1 = document.getElementById("end_longitude");
 
+            if (citySelect1 && latitudeInput1 && longitudeInput1) {
+                var selectedCity1 = citySelect1.value;
+
+                var cityCoordinates = {
+                    "Delhi": { "latitude": 28.7041, "longitude": 77.1025 },
+                    "Mumbai": { "latitude": 19.0760, "longitude": 72.8777 },
+                    "Bangalore": { "latitude": 12.9716, "longitude": 77.5946 },
+                    "Hyderabad": { "latitude": 17.3850, "longitude": 78.4867 },
+                    "Ahmedabad": { "latitude": 23.0225, "longitude": 72.5714 },
+                    "Chennai": { "latitude": 13.0827, "longitude": 80.2707 },
+                    "Kolkata": { "latitude": 22.5726, "longitude": 88.3639 },
+                    "Surat": { "latitude": 21.1702, "longitude": 72.8311 },
+                    "Pune": { "latitude": 18.5204, "longitude": 73.8567 },
+                    "Jaipur": { "latitude": 26.9124, "longitude": 75.7873 },
+                    "Lucknow": { "latitude": 26.8467, "longitude": 80.9462 },
+                    "Kanpur": { "latitude": 26.4499, "longitude": 80.3319 },
+                    "Nagpur": { "latitude": 21.1458, "longitude": 79.0882 },
+                    "Indore": { "latitude": 22.7196, "longitude": 75.8577 },
+                    "Thane": { "latitude": 19.2183, "longitude": 72.9781 },
+                    "Bhopal": { "latitude": 23.2599, "longitude": 77.4126 },
+                    "Visakhapatnam": { "latitude": 17.6868, "longitude": 83.2185 },
+                    "Pimpri-Chinchwad": { "latitude": 18.6279, "longitude": 73.8131 },
+                    "Patna": { "latitude": 25.5941, "longitude": 85.1376 },
+                    "Vadodara": { "latitude": 22.3072, "longitude": 73.1812 }
+                };
+
+                if (selectedCity1 in cityCoordinates) {
+                    latitudeInput1.value = cityCoordinates[selectedCity1].latitude;
+                    longitudeInput1.value = cityCoordinates[selectedCity1].longitude;
+                } else {
+                    latitudeInput1.value = "";
+                    longitudeInput1.value = "";
+                }
+            } else {
+                console.error("One or more elements could not be found.");
+            }
+        }
+        
+        function updatestartCoordinates() {
+            var citySelect2 = document.getElementById("start_city");
+            var latitudeInput2 = document.getElementById("start_latitude");
+            var longitudeInput2 = document.getElementById("start_longitude");
+
+            if (citySelect2 && latitudeInput2 && longitudeInput2) {
+                var selectedCity2 = citySelect2.value;
+
+                var cityCoordinates = {
+                    "Delhi": { "latitude": 28.7041, "longitude": 77.1025 },
+                    "Mumbai": { "latitude": 19.0760, "longitude": 72.8777 },
+                    "Bangalore": { "latitude": 12.9716, "longitude": 77.5946 },
+                    "Hyderabad": { "latitude": 17.3850, "longitude": 78.4867 },
+                    "Ahmedabad": { "latitude": 23.0225, "longitude": 72.5714 },
+                    "Chennai": { "latitude": 13.0827, "longitude": 80.2707 },
+                    "Kolkata": { "latitude": 22.5726, "longitude": 88.3639 },
+                    "Surat": { "latitude": 21.1702, "longitude": 72.8311 },
+                    "Pune": { "latitude": 18.5204, "longitude": 73.8567 },
+                    "Jaipur": { "latitude": 26.9124, "longitude": 75.7873 },
+                    "Lucknow": { "latitude": 26.8467, "longitude": 80.9462 },
+                    "Kanpur": { "latitude": 26.4499, "longitude": 80.3319 },
+                    "Nagpur": { "latitude": 21.1458, "longitude": 79.0882 },
+                    "Indore": { "latitude": 22.7196, "longitude": 75.8577 },
+                    "Thane": { "latitude": 19.2183, "longitude": 72.9781 },
+                    "Bhopal": { "latitude": 23.2599, "longitude": 77.4126 },
+                    "Visakhapatnam": { "latitude": 17.6868, "longitude": 83.2185 },
+                    "Pimpri-Chinchwad": { "latitude": 18.6279, "longitude": 73.8131 },
+                    "Patna": { "latitude": 25.5941, "longitude": 85.1376 },
+                    "Vadodara": { "latitude": 22.3072, "longitude": 73.1812 }
+                };
+
+                if (selectedCity2 in cityCoordinates) {
+                    latitudeInput2.value = cityCoordinates[selectedCity2].latitude;
+                    longitudeInput2.value = cityCoordinates[selectedCity2].longitude;
+                } else {
+                    latitudeInput2.value = "";
+                    longitudeInput2.value = "";
+                }
+            } else {
+                console.error("One or more elements could not be found.");
+            }
+        }
+    </script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.16.0/mapbox-gl-draw.js'></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
     <script>
         document.querySelectorAll('.toggle-container-inner-ticks-indicator').forEach(function (element) {
-            element.style.marginLeft = '100px';
+            element.style.marginLeft = '0px';
         });
     </script>
     <script>
@@ -182,6 +305,7 @@
             document.getElementById("uploadForm").addEventListener("submit", function (event) {
                 event.preventDefault();
                 var formData = {
+                    city_name: document.getElementById("start_city").value,
                     start_latitude: document.getElementById("start_latitude").value,
                     start_longitude: document.getElementById("start_longitude").value,
                     end_latitude: document.getElementById("end_latitude").value,
@@ -189,7 +313,7 @@
                     obstacle_points_latitude1: document.getElementById("obstacle_points_latitude1").value,
                     obstacle_points_longitude1: document.getElementById("obstacle_points_longitude1").value,
                     obstacle_points_latitude2: document.getElementById("obstacle_points_latitude2").value,
-                    obstacle_points_longitude2: document.getElementById("obstacle_points_longitude2").value
+                    obstacle_points_longitude2: document.getElementById("obstacle_points_longitude2").value,
                 };
                 centercordlat = formData.start_longitude
                 centercordlon = formData.start_latitude

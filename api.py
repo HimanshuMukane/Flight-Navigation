@@ -1,5 +1,9 @@
+import requests
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import pandas as pd
+from datetime import datetime
+import csv
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for this Flask app
@@ -31,8 +35,22 @@ def find_nearest_location(current_position, locations):
             min_distance = distance
     return nearest_location
 
+
+
+def find_nearest_port(current_position, ports):
+    nearest_port = None
+    min_distance = float('inf')
+    for port in ports:
+        distance = Geodesic.WGS84.Inverse(port.latitude, port.longitude, current_position[0], current_position[1])['s12']
+        if distance < min_distance:
+            nearest_port = port
+            min_distance = distance
+    return nearest_port
+
+
 def check_for_damage():
     return True  
+
 def compute_geodesic_points(start_point, end_point, num_points):
     geod = Geodesic.WGS84
     geodesic_line = geod.InverseLine(start_point[0], start_point[1], end_point[0], end_point[1])
@@ -71,16 +89,50 @@ def astar(start, goal, obstacles, num_points):
     path.reverse()
     return path
 
+def fetch_real_time_weather_data(api_key, city_name):
+    # city_name = "mumbai"
+    # print(city_name)
+    # print(api_key)
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}"
+    response = requests.get(url)
+    response.raise_for_status()  # Raise an exception for non-200 status codes
+    json_data = response.json()
+    if isinstance(json_data, list):
+        for item in json_data:
+            print(item)
+    elif isinstance(json_data, dict):
+        for key, value in json_data.items():
+            print(f"{key}: {value}")
+        print(" ")
+        print(" ")
+    else:
+        print(json_data)
+    if response.status_code == 200:
+        data = response.json()
+        weather_data = {
+            'precipitation': data['weather'][0]['main'],  
+            'temp_max': data['main']['temp_max'] - 273.15, 
+            'temp_min': data['main']['temp_min'] - 273.15,  # Convert from Kelvin to Celsius
+            'wind': data['wind']['speed']
+        }
+        return pd.DataFrame([weather_data])
+    else:
+        print("Error fetching weather data:", response.status_code)
+        return None
+
 @app.route('/your_flask_route', methods=['POST'])
 def your_flask_route():
     start_latitude = float(request.json.get('start_latitude'))
     start_longitude = float(request.json.get('start_longitude'))
+    city_name = request.json.get('city_name')
     end_latitude = float(request.json.get('end_latitude'))
     end_longitude = float(request.json.get('end_longitude'))
     obstacle_points_latitude1 = float(request.json.get('obstacle_points_latitude1'))
     obstacle_points_longitude1 = float(request.json.get('obstacle_points_longitude1'))
     obstacle_points_latitude2 = float(request.json.get('obstacle_points_latitude2'))
     obstacle_points_longitude2 = float(request.json.get('obstacle_points_longitude2'))
+    api_key = "ca8c2c7970a09dc296d9b3cfc4d06940"
+    fetch_real_time_weather_data(api_key, city_name)
 
     start_point = (start_latitude, start_longitude) 
     end_point = (end_latitude, end_longitude)  
@@ -89,9 +141,6 @@ def your_flask_route():
         (obstacle_points_latitude1, obstacle_points_longitude1),
         (obstacle_points_latitude2, obstacle_points_longitude2)   
     ]
-    print(start_point)
-    print(end_point)
-    print(obstacle_points)
 
     num_points = 10
     shortest_path = compute_geodesic_points(start_point, end_point, num_points)
@@ -112,7 +161,24 @@ def your_flask_route():
             break
     else:
         print("Shortest path by GeographicLib (no obstacles):")
-        print(shortest_path)
+    airports = read_airports_from_csv(r'airports.csv')
+    current_position = shortest_path[-1]
+    current_fuel_level = float(10)
+    if current_fuel_level < 20:  
+        nearest_port = find_nearest_port(current_position, airports)
+        if nearest_port:
+            print("WARNING: Low fuel level detected. Nearby port for refueling:", nearest_port.name)
+        else:
+            print("No nearby port found for refueling.")
+
+    if check_for_damage():
+        print("WARNING: Aircraft damage detected. Finding emergency landing sites.")
+        nearest_location = find_nearest_location(current_position, airports)
+        if nearest_location:
+            print("Emergency landing site identified:", nearest_location.name)
+        else:
+            print("No suitable emergency landing site found nearby.")
+
     response_data = {"message": tuple(shortest_path)}
 
     return jsonify(response_data)
